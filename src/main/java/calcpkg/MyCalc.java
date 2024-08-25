@@ -19,6 +19,11 @@ public class MyCalc {
 	{
 		return a/b;
 	}
+	
+	public void greeting()
+	{
+		System.out.println("Hello Jenkins");
+	}
 
 	public static void main(String[] args) {
 		
@@ -27,5 +32,6 @@ public class MyCalc {
 		System.out.println("Diff is: "+ob.diff(20,10));
 		System.out.println("Mul is: "+ob.mul(20,10));
 		System.out.println("Div is: "+ob.div(20,10));
+		ob.greeting();
 	}
 }
