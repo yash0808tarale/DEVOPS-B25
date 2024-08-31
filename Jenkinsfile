@@ -25,7 +25,7 @@ pipeline
 		{
 			steps
 			{
-				bat 'mvn install'
+				bat 'mv install'
 			}			
 		}
 		stage('Java Version Check Stage')
