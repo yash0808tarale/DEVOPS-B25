@@ -28,6 +28,13 @@ pipeline
 				bat 'mvn install'
 			}			
 		}
+		stage('Java Version Check Stage')
+		{
+			steps
+			{
+				bat 'java --version'
+			}			
+		}
 		stage('Test Stage')
 		{
 			steps
