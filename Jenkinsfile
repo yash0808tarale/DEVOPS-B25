@@ -39,7 +39,7 @@ pipeline
 		{
 			steps
 			{
-				echo 'Successfully Build'
+				echo 'Successfully Build Thanks'
 			}			
 		}
 	
