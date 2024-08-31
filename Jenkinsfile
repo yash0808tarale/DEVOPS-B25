@@ -21,11 +21,18 @@ pipeline
 				bat 'mvn clean'
 			}			
 		}
+		stage('Test Stage')
+		{
+			steps
+			{
+				bat 'mvn test'
+			}			
+		}
 		stage('Build Stage')
 		{
 			steps
 			{
-				bat 'mv install'
+				bat 'mvn install'
 			}			
 		}
 		stage('Java Version Check Stage')
@@ -35,13 +42,7 @@ pipeline
 				bat 'java --version'
 			}			
 		}
-		stage('Test Stage')
-		{
-			steps
-			{
-				bat 'mvn test'
-			}			
-		}
+		
 		stage('Success Stage')
 		{
 			steps
