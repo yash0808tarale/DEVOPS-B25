@@ -14,6 +14,13 @@ pipeline
 				echo 'Welcome to Jenkins Pipeline'
 			}			
 		}
+		stage('Checkout') 
+		{
+        		steps 
+			{                
+           			 git 'https://github.com/hkshitesh/DEVOPS-B25.git'
+        		}
+		}
 		stage('Clean Stage')
 		{
 			steps
