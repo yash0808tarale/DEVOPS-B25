@@ -7,7 +7,7 @@ pipeline
 	}
 	
 	stages{
-		stage('Welcome Stage')
+		stage('Welcome f1 Branch')
 		{
 			steps
 			{
